@@ -1,0 +1,87 @@
+.video {
+  width: 1680px;
+  height: 945px; }
+
+.line-for-video {
+  width: 1680px;
+  background: #d1fcff;
+  font-size: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: #01579B;
+  margin-top: -8px; }
+  .line-for-video p {
+    width: 700px;
+    margin-left: 70px; }
+  .line-for-video button {
+    margin-left: 250px;
+    width: 400px;
+    border: none;
+    background-color: #f3ff00;
+    color: #01579B; }
+  .line-for-video img {
+    width: 86px;
+    height: 131px;
+    margin-left: 40px;
+    margin-top: 10px; }
+
+.presentation {
+  margin-left: 60px; }
+  .presentation .block {
+    width: 567px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    .presentation .block .image1 {
+      height: 400px;
+      width: 400px;
+      margin-top: 42px; }
+    .presentation .block .image2 {
+      padding-top: 58px; }
+    .presentation .block p {
+      background: #d1fcff;
+      font-size: 37px;
+      color: #00C0FF;
+      margin: 0; }
+  .presentation .block1 {
+    width: 500px; }
+  .presentation .block3 {
+    width: 537px; }
+
+.buttons {
+  font-size: 45px; }
+  .buttons button {
+    background-color: #01579B;
+    border: 0;
+    color: white;
+    padding: 0 175px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 7px;
+    margin-top: 7px; }
+
+.sliders {
+  margin: 0 100px;
+  font-size: 35px; }
+  .sliders .title {
+    height: 158px; }
+  .sliders .button {
+    color: white;
+    font-size: 32px; }
+
+.posts {
+  margin: 0 50px;
+  height: 500px; }
+  .posts .post {
+    padding-right: 5px;
+    color: #01579B;
+    font-size: 32px; }
+    .posts .post p {
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto; }
+  .posts .image {
+    height: 360px;
+    width: 480px; }
+
+/*# sourceMappingURL=indexstyle.css.map */

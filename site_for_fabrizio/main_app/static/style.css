@@ -1,0 +1,63 @@
+body.body {
+  font-size: 20px; }
+
+header .main {
+  margin: 0;
+  padding: 0; }
+  header .main a {
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 0px;
+    color: white;
+    background-color: #01579B;
+    font-size: 37px; }
+  header .main a:hover {
+    color: #01579B;
+    background-color: white;
+    text-decoration: none; }
+header .companies {
+  padding: 22px 0;
+  font-size: 36px; }
+  header .companies .ghost {
+    width: 37px; }
+  header .companies .fab {
+    padding: 0; }
+  header .companies .surname {
+    padding-left: 0px;
+    padding-right: 0; }
+  header .companies .label {
+    padding: 0; }
+  header .companies div {
+    color: #01579B; }
+  header .companies .company_name {
+    font-size: 23px;
+    padding: 0; }
+    header .companies .company_name :nth-child(3) {
+      color: #d30e11;
+      padding: 0px; }
+    header .companies .company_name :nth-child(4) {
+      color: #292929;
+      padding: 0px; }
+    header .companies .company_name :nth-child(7) {
+      color: #292929;
+      font-family: monospace;
+      margin-top: -8px;
+      font-size: 22px; }
+
+footer {
+  color: #01579B; }
+  footer .line {
+    margin-top: 50px;
+    width: 100%;
+    height: 5px;
+    background-color: #01579B; }
+  footer .footer-block {
+    padding: 20px 40px; }
+    footer .footer-block div > p {
+      padding: 0;
+      margin: 0; }
+  footer .my_name {
+    margin-top: 100px;
+    color: grey; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'indexstyle.css' %}">
+<div class="text-center">
+	<iframe class="video" src="https://www.youtube.com/embed/9zlgkvF2Nro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="0" showinfo="0"></iframe>
+</div>
+<div class="line-for-video row">
+	<p>Il 97% dei nostri clienti consiglia<br> ai propri parenti di comprare da noi</p>
+	<button>Leggi tutte le recensioni</button>
+	<img src="\static/images/image4.png">
+</div>
+
+<div class=" my-4">
+    <hr class="my-4">
+    <!--Carousel Wrapper-->
+	<div id="multi-item-example" class="carousel slide carousel-multi-item" >
+		<div class="carousel-inner" role="listbox">
+        <!--First slide-->   
+          	{% for client in clients %}
+          	{% if client.id == 1 %}
+			<div class="carousel-item active">
+	          	<div class="row sliders">
+          	{% endif %}
+          	{% if client.id == 4 or client.id == 7 %}
+          	<div class="carousel-item">
+	          	<div class="row">
+	        {% endif %}
+	            <div class="col-sm-4">
+	              <div class="card mb-2">
+	                <img class="card-img-top" src="{{ client.image.url }}" alt="Card image cap">
+	              </div>
+	            </div>
+	        {% if client.id == 3 or client.id == 6 or client.id == 9  %}
+	          	</div>
+	        </div>
+          	{% endif %}
+			{% endfor %}
+        <!--/.First slide-->
+      </div>
+      <!--/.Slides-->
+    </div>
+    <!--/.Carousel Wrapper-->
+  </div>
+<div class="row presentation text-center">
+	<div class=" block block1">
+		<img src="\static/images/image1.jpg" alt="" class="image1">
+		<p>solo le auto migliori ricevono nostra medaglia</p>
+	</div>
+	<div class=" block">
+		<img src="\static/images/image2.jpg" alt="" class="image2">
+		<p>Scegli un auto come nuova al prezzo di una usata</p>
+	</div>
+	<div class=" block block3">
+		<img src="\static/images/image3.jpg" alt="">
+		<p>sarai felice o la restituisci</p>
+	</div>
+</div>
+<div class="buttons">
+	<button>Vedi tutte le auto</button>
+	<button>Valuta la tua auto</button>
+</div>
+
+  <div class="sliders my-4">
+	
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+		
+	          <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        
+          	{% for post in posts %}
+          	{% if post.id == 1 %}
+			<div class="carousel-item active">
+	          	<div class="row">
+          	{% endif %}
+          	{% if post.id == 4 or post.id == 7 %}
+          	<div class="carousel-item">
+	          	<div class="row">
+	        {% endif %}
+	            <div class="col-sm-4">
+	              <div class="card mb-2">
+	                <img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
+	                <div class="card-body">
+	                  <p class="card-title title size">{{ post.title }}</p>
+	                  <p class="size">{{ post.price }}&#8364;</p>
+	                  <a class="btn btn-primary button">Scopri di più</a>
+	                </div>
+	              </div>
+	            </div>
+	        {% if post.id == 3 or post.id == 6 or post.id == 9  %}
+	          	</div>
+	        </div>
+          	{% endif %}
+			{% endfor %}
+        <!--/.First slide-->
+      </div>
+      <!--/.Slides-->
+    </div>
+    <!--/.Carousel Wrapper-->
+  </div>
+{% endblock %}

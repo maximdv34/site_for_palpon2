@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% for post in posts %}
+<p>{{ post.title }}</p>
+<img src="{{ post.image.url }}" alt="img">
+<p>{{ post.text }}</p>
+{% endfor %}
+{% endblock %}
