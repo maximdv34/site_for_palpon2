@@ -16,6 +16,7 @@ class Post(models.Model):
 class Client(models.Model):
     info = models.CharField(max_length=200)
     image = models.ImageField(upload_to='images')
+    created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.info

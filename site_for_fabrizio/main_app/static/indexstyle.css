@@ -21,8 +21,8 @@
     background-color: #f3ff00;
     color: #01579B; }
   .line-for-video img {
-    width: 86px;
-    height: 131px;
+    width: 130px;
+    height: 130px;
     margin-left: 40px;
     margin-top: 10px; }
 
@@ -68,6 +68,8 @@
   .sliders .button {
     color: white;
     font-size: 32px; }
+  .sliders .images {
+    width: 440px; }
 
 .posts {
   margin: 0 50px;

@@ -14,28 +14,28 @@
 <div class=" my-4">
     <hr class="my-4">
     <!--Carousel Wrapper-->
-	<div id="multi-item-example" class="carousel slide carousel-multi-item" >
+	<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 		<div class="carousel-inner" role="listbox">
         <!--First slide-->   
-          	{% for client in clients %}
-          	{% if client.id == 1 %}
-			<div class="carousel-item active">
+        	<div class="carousel-item active">
 	          	<div class="row sliders">
-          	{% endif %}
-          	{% if client.id == 4 or client.id == 7 %}
+          	{% for client in clients %}
+          	{% if client.id == 3 or client.id == 6 or client.id == 9 %}
           	<div class="carousel-item">
-	          	<div class="row">
+	          	<div class="row sliders">
 	        {% endif %}
 	            <div class="col-sm-4">
 	              <div class="card mb-2">
 	                <img class="card-img-top" src="{{ client.image.url }}" alt="Card image cap">
 	              </div>
 	            </div>
-	        {% if client.id == 3 or client.id == 6 or client.id == 9  %}
+	        {% if client.id == 1 or client.id == 4 or client.id == 7 %}
 	          	</div>
 	        </div>
           	{% endif %}
 			{% endfor %}
+				</div>
+	        </div>
         <!--/.First slide-->
       </div>
       <!--/.Slides-->
@@ -88,13 +88,10 @@
       <div class="carousel-inner" role="listbox">
 
         <!--First slide-->
-        
-          	{% for post in posts %}
-          	{% if post.id == 1 %}
-			<div class="carousel-item active">
+        	<div class="carousel-item active">
 	          	<div class="row">
-          	{% endif %}
-          	{% if post.id == 4 or post.id == 7 %}
+          	{% for post in posts %}
+          	{% if post.id == 3 or post.id == 6 %}
           	<div class="carousel-item">
 	          	<div class="row">
 	        {% endif %}
@@ -108,11 +105,13 @@
 	                </div>
 	              </div>
 	            </div>
-	        {% if post.id == 3 or post.id == 6 or post.id == 9  %}
+	        {% if post.id == 1 or post.id == 4 or post.id == 7 %}
 	          	</div>
 	        </div>
           	{% endif %}
 			{% endfor %}
+				</div>
+	        </div>
         <!--/.First slide-->
       </div>
       <!--/.Slides-->
