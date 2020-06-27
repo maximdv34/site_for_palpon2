@@ -1,0 +1,12 @@
+.sliders {
+  margin-top: 50px; }
+  .sliders .slider {
+    margin: 0 100px;
+    font-size: 35px; }
+    .sliders .slider .title {
+      height: 158px; }
+    .sliders .slider .button {
+      color: white;
+      font-size: 32px; }
+
+/*# sourceMappingURL=blogstyle.css.map */

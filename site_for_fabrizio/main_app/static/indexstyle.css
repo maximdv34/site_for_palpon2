@@ -54,11 +54,11 @@
     background-color: #01579B;
     border: 0;
     color: white;
-    padding: 0 175px;
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-bottom: 7px;
-    margin-top: 7px; }
+    padding: 0 27px;
+    margin-left: 101px;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-top: 30px; }
 
 .sliders {
   margin: 0 100px;
@@ -68,8 +68,6 @@
   .sliders .button {
     color: white;
     font-size: 32px; }
-  .sliders .images {
-    width: 440px; }
 
 .posts {
   margin: 0 50px;

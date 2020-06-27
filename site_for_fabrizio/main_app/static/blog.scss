@@ -1,3 +1,14 @@
-.post{
-	
+.sliders{
+	margin-top: 50px;
+	.slider{
+		margin: 0 100px;
+		font-size: 35px;
+		.title{
+			height: 158px;
+		}
+		.button{
+			color: white;
+			font-size: 32px;
+		}
+	}
 }
