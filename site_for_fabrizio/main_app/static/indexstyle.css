@@ -84,4 +84,11 @@
     height: 360px;
     width: 480px; }
 
+a {
+  text-decoration: none;
+  color: #01579B; }
+
+a:hover {
+  text-decoration: none; }
+
 /*# sourceMappingURL=indexstyle.css.map */

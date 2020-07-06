@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'blogstyle.css' %}">
+	  <div>
+	    <img src="{{ post.image.url }}">
+	    <div>
+	      <p class="title">{{ post.title }}</p>
+	      <p>{{ post.price }}&#8364;</p>
+	      <iframe class="video" src="{{ post.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="0" showinfo="0"></iframe>
+	      <div>
+	      	<img src="{{ post.img.url }}">
+			{% for image in images %}
+				<img src="{{ image.image.url }}">
+			{% endfor %}
+	      </div>
+	      <p>{{ post.text1 }}</p>
+	      <p>{{ post.text2 }}</p>
+
+	    </div>
+	  </div>
+
+{% endblock %}

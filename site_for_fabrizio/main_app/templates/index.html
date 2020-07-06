@@ -3,7 +3,7 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'indexstyle.css' %}">
 <div class="text-center">
-	<iframe class="video" src="https://www.youtube.com/embed/9zlgkvF2Nro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="0" showinfo="0"></iframe>
+	<iframe class="video" src="https://www.youtube.com/embed/j0SMYhlFHdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="0" showinfo="0"></iframe>
 </div>
 <div class="line-for-video row">
 	<p>Il 97% dei nostri clienti consiglia<br> ai propri parenti di comprare da noi</p>
@@ -62,7 +62,6 @@
 </div>
 
   <div class="sliders my-4">
-	
 
     <hr class="my-4">
 
@@ -96,6 +95,7 @@
 	          	<div class="row">
 	        {% endif %}
 	            <div class="col-sm-4">
+	            	<a href="{% url 'detail' post.pk %}">
 	              <div class="card mb-2">
 	                <img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
 	                <div class="card-body">
@@ -103,6 +103,7 @@
 	                  <p class="size">{{ post.price }}&#8364;</p>
 	                  <a class="btn btn-primary button">Scopri di più</a>
 	                </div>
+	            	</a>
 	              </div>
 	            </div>
 	        {% if post.id == 1 or post.id == 4 or post.id == 7 %}
