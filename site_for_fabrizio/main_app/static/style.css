@@ -15,6 +15,10 @@ header .main {
     color: #01579B;
     background-color: white;
     text-decoration: none; }
+  header .main .perche-noi {
+    width: 10%; }
+  header .main .presentiamoci {
+    width: 15%; }
 header .companies {
   padding: 22px 0;
   font-size: 36px; }

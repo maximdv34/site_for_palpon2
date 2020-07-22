@@ -4,17 +4,17 @@ from .models import Post, Client, Images
 
 def index(request):
     return render(request, 'index.html', {'posts': Post.objects.order_by('-created_date'),
-                                          'clients': Client.objects.order_by('-created_date')})
-
-
-def blog(request):
-    return render(request, 'blog.html', {'posts': Post.objects.order_by('-created_date')})
+                                          'clients': list(Client.objects.order_by('-created_date'))})
 
 
 def detail(request, pk):
     post = Post.objects.get(pk=pk)
     images = list(Images.objects.filter(post=pk))
     return render(request, 'detail.html', {'post': post, 'images': images})
+
+
+def auto_in_vendita(request):
+    return render(request, 'auto_in_vendita.html', {'posts': Post.objects.order_by('-created_date')})
 
 
 def entra_in_contatto(request):
@@ -31,3 +31,7 @@ def perche_noi(request):
 
 def presentiamoci(request):
     return render(request, 'presentiamoci.html')
+
+
+def reviews(request):
+    return render(request, 'reviews.html')

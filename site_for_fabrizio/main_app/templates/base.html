@@ -30,13 +30,14 @@
             </div>
         </div>
         <menu class="main row">
-            <a href="{% url 'presentiamoci' %}" class="col-sm-2">Presentiamoci</a>
-            <a href="{% url 'perche_noi' %}" class="col-sm-2">Perchè noi</a>
+            <a href="{% url 'index' %}" class="col-sm-1">Home</a>
+            <a href="{% url 'presentiamoci' %}" class="presentiamoci">Presentiamoci</a>
+            <a href="{% url 'perche_noi' %}" class="perche-noi">Perchè noi</a>
+            <a href="{% url 'auto_in_vendita' %}" class="col-sm-2">Auto in vendita</a>
             <a href="{% url 'paga_con_comodo' %}" class="col-sm-2">Paga con comodo</a>
-            <a href="{% url 'entra_in_contatto' %}" class="col-sm-3">Entra in contatto</a>
+            <a href="{% url 'entra_in_contatto' %}" class="col-sm-2">Entra in contatto</a>
             <a href="#" class="col-sm-1">Service</a>
             <a href="#" class="col-sm-1">Blog</a>
-            <a href="#" class="col-sm-1">TV</a>
         </menu>
     </header>
     {% block content %}{% endblock %}

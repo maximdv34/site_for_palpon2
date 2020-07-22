@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'blogstyle.css' %}">
+<div class="sliders">
+	<div class="row slider">
+	{% for post in posts %}
+	{% if forloop.counter == 4 or forloop.counter == 7 %}
+		<div class="row slider">
+	{% endif %}
+	<div class="col-sm-4">
+	  <div class="card mb-2">
+	  	<a href="{% url 'detail' post.pk %}">
+		  	<div class="image"> 
+		    	<img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
+			</div>
+		    <div class="card-body">
+		      <p class="card-title title">{{ post.title }}</p>
+		      <p class="size">{{ post.price }}&#8364;</p>
+		      <a class="btn btn-primary button" href="{% url 'detail' post.pk %}">Scopri di più</a>
+		    </div>
+		</a>
+	  </div>
+	</div>
+	{% if forloop.counter == 3 or forloop.counter == 6 or forloop.counter == 9 %}
+		</div>
+	{% endif %}
+	{% endfor %}
+</div>
+{% endblock %}

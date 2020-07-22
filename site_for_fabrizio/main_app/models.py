@@ -4,8 +4,8 @@ from django.utils import timezone
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
-    video_url = models.CharField(max_length=200)
-    text1 = models.TextField(max_length=2000)
+    video_url = models.CharField(max_length=200, blank=True)
+    text1 = models.TextField(max_length=700)
     text2 = models.TextField(max_length=2000)
     image = models.ImageField(upload_to='images')
     created_date = models.DateTimeField(default=timezone.now)

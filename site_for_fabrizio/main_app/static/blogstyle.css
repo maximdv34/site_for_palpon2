@@ -8,5 +8,16 @@
     .sliders .slider .button {
       color: white;
       font-size: 32px; }
+  .sliders .image {
+    height: 393px;
+    align-items: center;
+    display: flex; }
+
+a {
+  text-decoration: none;
+  color: #01579B; }
+
+a:hover {
+  text-decoration: none; }
 
 /*# sourceMappingURL=blogstyle.css.map */

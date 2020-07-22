@@ -68,6 +68,10 @@
   .sliders .button {
     color: white;
     font-size: 32px; }
+  .sliders .image {
+    height: 393px;
+    align-items: center;
+    display: flex; }
 
 .posts {
   margin: 0 50px;

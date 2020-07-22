@@ -1,23 +1,55 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'blogstyle.css' %}">
-	  <div>
-	    <img src="{{ post.image.url }}">
-	    <div>
-	      <p class="title">{{ post.title }}</p>
-	      <p>{{ post.price }}&#8364;</p>
-	      <iframe class="video" src="{{ post.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="0" showinfo="0"></iframe>
-	      <div>
-	      	<img src="{{ post.img.url }}">
+<link rel="stylesheet" type="text/css" href="{% static 'detailstyle.css' %}">
+<div>
+	<div class="content row">
+		<p class="title text-center col-sm-12">{{ post.title }}</p>
+		<div class="col-sm-7 files">
+			{% if post.video_url %}
+			<iframe class="video" src="{{ post.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="0" showinfo="0"></iframe>
+			<div class="images">
+				<img src="{{ post.image.url }}" class="image">
+				{% for image in images %}
+					<img src="{{ image.image.url }}" class="image">
+	          		{% endfor %}
+			</div>
+			{% else %}
+			<img src="{{ post.image.url }}" class="head-image">
+			<div class="images">
+				{% for image in images %}
+					<img src="{{ image.image.url }}" class="image">
+	          		{% endfor %}
+			</div>
+			{% endif %}
+			
+		</div>
+		<div class="col-sm-5 row">
+			<div class=" col-sm-12">
+				<div class="disponibile float-right">DISPONIBILE</div>
+		</div>
+			<div class="text1 col-sm-12">
+				<p>{{ post.text1|linebreaks }}</p>
+				
+			</div>
+			<div class="garanzia col-sm-12">
+				<h2 class="text-center">GARANZIA 12 MESI</h2>
+			</div>
+			<div class="col-sm-12">
+				<div class="price text-center">{{ post.price }}&#8364;</div>
+				<div class="richedi text-center">RICHEDI FINANZIAMENTO</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-11 mx-auto text2"><p>{{ post.text2|linebreaks }}</p></div>
+		<div class="row big-images col-sm-11 mx-auto">
+	      	<div class="col-sm-6"><img src="{{ post.image.url }}"></div>
 			{% for image in images %}
-				<img src="{{ image.image.url }}">
+				<div class="col-sm-6"><img src="{{ image.image.url }}"></div>
 			{% endfor %}
-	      </div>
-	      <p>{{ post.text1 }}</p>
-	      <p>{{ post.text2 }}</p>
-
-	    </div>
-	  </div>
+	  	</div>
+	</div>
+</div>
 
 {% endblock %}
