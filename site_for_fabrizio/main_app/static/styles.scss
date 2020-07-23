@@ -3,20 +3,43 @@ $site-color: #01579B;
 body.body{
     font-size: 20px;
 }
-
+.blocked-block{
+    width: 100%;
+    height: 129px;
+}
+.mesenger{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    bottom: 0px; 
+    right: 0px;
+}
+.whatsapp{
+    position: fixed;
+    width: 110px;
+    height: 110px;
+    z-index: 1;
+    bottom: 0px; 
+    right: 100px;
+}
 header{
+    width: 100%;
+    background: #fff;
+    position: fixed!important;
+    z-index: 1;
     .main{
         margin: 0;
         padding: 0;
-        a{
+        .a{
             text-align: center;
             text-decoration: none;
-            padding: 25px 0px;
+            padding: 2px 0px;
             color: white;
             background-color: $site-color;
             font-size: 37px;   
         }
-        a:hover{
+        .a:hover{
             color: $site-color;
             background-color: white;
             text-decoration: none;
@@ -25,13 +48,16 @@ header{
             width: 10%;
         }
         .presentiamoci{
-            width: 15%;
+            width: 12%;
+        }
+        .recensioni{
+            width: 11%;
         }
         
     }
     .companies{
-        padding: 22px 0;
-        font-size: 36px;
+        padding: 5px 0;
+        font-size: 35px;
         .ghost{
             width: 37px;
         }

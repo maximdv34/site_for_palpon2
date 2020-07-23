@@ -30,17 +30,20 @@
             </div>
         </div>
         <menu class="main row">
-            <a href="{% url 'index' %}" class="col-sm-1">Home</a>
-            <a href="{% url 'presentiamoci' %}" class="presentiamoci">Presentiamoci</a>
-            <a href="{% url 'perche_noi' %}" class="perche-noi">Perchè noi</a>
-            <a href="{% url 'auto_in_vendita' %}" class="col-sm-2">Auto in vendita</a>
-            <a href="{% url 'paga_con_comodo' %}" class="col-sm-2">Paga con comodo</a>
-            <a href="{% url 'entra_in_contatto' %}" class="col-sm-2">Entra in contatto</a>
-            <a href="#" class="col-sm-1">Service</a>
-            <a href="#" class="col-sm-1">Blog</a>
+            <a href="{% url 'index' %}" class="col-sm-1 a">Home</a>
+            <a href="{% url 'presentiamoci' %}" class="presentiamoci a">Chi siamo</a>
+            <a href="{% url 'perche_noi' %}" class="perche-noi a">Perchè noi</a>
+            <a href="{% url 'auto_in_vendita' %}" class="col-sm-2 a">Auto in vendita</a>
+            <a href="{% url 'paga_con_comodo' %}" class="col-sm-2 a">Paga con comodo</a>
+            <a href="{% url 'entra_in_contatto' %}" class="col-sm-2 a">Entra in contatto</a>
+            <a href="#" class="col-sm-1 a">Service</a>
+            <a href="#" class="recensioni a">Recensioni</a>
         </menu>
     </header>
+    <div class="blocked-block"></div>
     {% block content %}{% endblock %}
+    <a href="https://www.facebook.com/messages/t/fabrizio.palpon"><img src="\static/images/image6.png" class="mesenger"></a>
+    <a href="http://api.whatsapp.com/send?phone=393939893909"><img src="\static/images/image7.png" class="whatsapp"></a>
     <footer>
         <div class="line"></div>
         <div class="row footer-block">
