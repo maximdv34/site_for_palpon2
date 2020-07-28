@@ -34,4 +34,4 @@ def presentiamoci(request):
 
 
 def reviews(request):
-    return render(request, 'reviews.html')
+    return render(request, 'reviews.html', {'clients': list(Client.objects.order_by('-created_date'))})

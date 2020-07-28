@@ -3,7 +3,7 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'reviewsstyle.css' %}">
 <div class="row mx-auto">
-	<div class="col-sm-11 row">
+	<div class="col-sm-10 row mx-auto">
 		<div class="col-sm-6"><img src="\static/images/image5.jpg" class="diplom"></div>
 		<div class="link col-sm-6">
 			<p>
@@ -12,5 +12,16 @@
 			</p>
 		</div>
 	</div>
+	{% for client in clients %}
+	<div class="row col-sm-10 mx-auto client-cart">
+		<div class="col-sm-6 mx-auto text-center">
+			<img src="{{ client.image.url }}" class="client-image">
+		</div>
+		<div class="col-sm-6 texts">
+			<h3>{{ client.name }}:</h3>
+			<p>{{ client.text }}</p>
+		</div>
+	</div>
+	{% endfor %}
 </div>
 {% endblock %}

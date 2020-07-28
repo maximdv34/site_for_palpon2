@@ -3,7 +3,7 @@ body.body {
 
 .blocked-block {
   width: 100%;
-  height: 129px; }
+  height: 128px; }
 
 .mesenger {
   position: fixed;
@@ -35,7 +35,7 @@ header {
       padding: 2px 0px;
       color: white;
       background-color: #01579B;
-      font-size: 37px; }
+      font-size: 1.8em; }
     header .main .a:hover {
       color: #01579B;
       background-color: white;
@@ -48,7 +48,7 @@ header {
       width: 11%; }
   header .companies {
     padding: 5px 0;
-    font-size: 35px; }
+    font-size: 1.8em; }
     header .companies .ghost {
       width: 37px; }
     header .companies .fab {

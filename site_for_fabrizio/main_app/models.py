@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.signals import post_delete
 from django.utils import timezone
 
 
@@ -19,12 +20,17 @@ class Images(models.Model):
     post = models.ForeignKey(Post, default=None, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='images', verbose_name='Image')
 
+    def __str__(self):
+        return self.post.__str__()
 
+
+# post_delete.connect(, sender=Images, dispatch_uid="images")
 class Client(models.Model):
-    info = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+    text = models.TextField(max_length=1000)
     image = models.ImageField(upload_to='images')
     created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.info
+        return self.name
 # Create your models here.
