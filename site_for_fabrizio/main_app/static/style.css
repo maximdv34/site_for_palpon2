@@ -1,25 +1,23 @@
 body.body {
-  font-size: 20px; }
+  font-size: 1.5vw; }
 
 .blocked-block {
   width: 100%;
-  height: 128px; }
+  height: 6.8vw; }
 
 .mesenger {
   position: fixed;
-  width: 100px;
-  height: 100px;
+  width: 6.5%;
   z-index: 1;
   bottom: 0px;
   right: 0px; }
 
 .whatsapp {
   position: fixed;
-  width: 110px;
-  height: 110px;
+  width: 7.5%;
   z-index: 1;
-  bottom: 0px;
-  right: 100px; }
+  bottom: -1%;
+  right: 6.5%; }
 
 header {
   width: 100%;
@@ -35,45 +33,41 @@ header {
       padding: 2px 0px;
       color: white;
       background-color: #01579B;
-      font-size: 1.8em; }
+      font-size: 2vw; }
     header .main .a:hover {
       color: #01579B;
       background-color: white;
       text-decoration: none; }
-    header .main .perche-noi {
-      width: 10%; }
-    header .main .presentiamoci {
-      width: 12%; }
-    header .main .recensioni {
-      width: 11%; }
   header .companies {
     padding: 5px 0;
-    font-size: 1.8em; }
-    header .companies .ghost {
-      width: 37px; }
+    font-size: 1.9vw; }
     header .companies .fab {
       padding: 0; }
     header .companies .surname {
-      padding-left: 0px;
       padding-right: 0; }
     header .companies .label {
       padding: 0; }
     header .companies div {
       color: #01579B; }
     header .companies .company_name {
-      font-size: 23px;
+      font-size: 1.3vw;
       padding: 0; }
-      header .companies .company_name :nth-child(3) {
+      header .companies .company_name .enterprise {
+        width: 20%;
+        margin-left: 30%; }
+      header .companies .company_name .palponservice {
+        width: 25%;
         color: #d30e11;
         padding: 0px; }
-      header .companies .company_name :nth-child(4) {
+      header .companies .company_name .palpongomme {
+        width: 23%;
         color: #292929;
         padding: 0px; }
-      header .companies .company_name :nth-child(7) {
+      header .companies .company_name .vendita {
+        margin-left: 14%;
         color: #292929;
         font-family: monospace;
-        margin-top: -8px;
-        font-size: 22px; }
+        margin-top: -1.3%; }
 
 footer {
   color: #01579B; }
@@ -90,5 +84,38 @@ footer {
   footer .my_name {
     margin-top: 100px;
     color: grey; }
+
+@media only all and (max-width: 600px) {
+  header {
+    position: relative !important; }
+    header .companies {
+      font-size: 18px; }
+    header .company_name {
+      font-size: 13px !important;
+      margin-right: -10px;
+      margin-left: -10px; }
+      header .company_name .enterprise {
+        width: 33.3% !important;
+        margin: 0 !important; }
+      header .company_name .palponservice {
+        width: 33.3% !important;
+        margin: 0 !important; }
+      header .company_name .palpongomme {
+        width: 33.3% !important;
+        margin: 0 !important; }
+      header .company_name .vendita {
+        margin: 0 !important; }
+    header .main .a {
+      font-size: 20px; }
+
+  .mesenger {
+    width: 50px;
+    bottom: 0px;
+    right: 0px; }
+
+  .whatsapp {
+    width: 55px;
+    bottom: -3px;
+    right: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

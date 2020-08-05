@@ -2,63 +2,70 @@
 	background: #f1f1f1;
 	.video{
 	width: 100%;
-	height: 795px;
+	height: 42vw;
 	}
 	.files{
 
 	}
 	.title{
-		font-size: 45px;
+		font-size: 2.3vw;
 	}
 	.images{
 		width: 100%;
-		height: 158px;
 		overflow-x: hidden;
 		overflow-y: hidden;
-
 		.image{
 			width: 20%;
 		}
+		.button{
+			background: #01579B;
+			vertical-align: middle;
+			border: 0;
+			color: #fff;
+			font-size: 2.1vw;
+			padding: 2% 0;
+			width: 17%;
+		}
 	}
 	.head-image{
-		height: 795px;
+		width: 100%;
 	}
 	.disponibile{
-		padding: 3px 50px; 
-		font-size: 35px;
+		padding: 0.7% 4%; 
+		font-size: 1.9vw;
 		background: #008d1b;
 		color: #fff;
 	}
 	.text1{
-		height: 660px;
+		height: 35vw;
 		background: #fff;
-		padding: 10px;
 		overflow-x: hidden;
 		overflow-y: hidden;
 		p{
-			font-size: 30px;
+			font-size: 1.9vw;
 		}
 	}
 	.garanzia{
 		background: #fff;
-		padding: 10px 0;
+		padding: 2% 0;
+		font-size: 2vw;
 	}
 	.price{
-		font-size: 50px;
+		font-size: 2.7vw;
 		background: #01579B;
 		color: #fff;
 	}
 
 	.richedi{
 		background: #565755;
-		font-size: 40px;
+		font-size: 2vw;
 		color: #fff;
-		padding: 15px;
-		margin-top: 15px;
+		padding: 2%;
+		margin-top: 1%;
 	}
 }
 .text2{
-	font-size: 30px;
+	font-size: 1.55vw;
 }
 .big-images>div>img{
 	width: 100%;

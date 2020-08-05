@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 {% load static %}
 <html lang="it">
 <head>
@@ -14,30 +15,26 @@
 <body class="body">
     <header>
         <div class="row text-center companies">
-            <div class="col-sm-6 row fab"> 
-                <div class="ghost"></div>          
+            <div class="col-sm-6 row fab">           
                 <div class="col-sm-4 surname">Fabrizio Palpon</div> 
                 <div class="col-sm-7 label">dal 1989 Onestà Qualità Garanzia</div>
             </div>
             <div class="col-sm-6 row company_name">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-2"><b>ENTERPRISE</b></div>
-                <div class="col-sm-3"><b>PALPONSERVICE</b></div>
-                <div class="col-sm-2"><b>PALPONGOMME</b></div>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-11"><b>Vendita & Assistenza Automobili</b></div>
+                <div class="enterprise"><b>ENTERPRISE</b></div>
+                <div class="palponservice"><b>PALPONSERVICE</b></div>
+                <div class="palpongomme"><b>PALPONGOMME</b></div>
+                <div class="col-sm-12 vendita"><b>Vendita & Assistenza Automobili</b></div>
             </div>
         </div>
         <menu class="main row">
             <a href="{% url 'index' %}" class="col-sm-1 a">Home</a>
-            <a href="{% url 'presentiamoci' %}" class="presentiamoci a">Chi siamo</a>
-            <a href="{% url 'perche_noi' %}" class="perche-noi a">Perchè noi</a>
+            <a href="{% url 'presentiamoci' %}" class="col-sm a">Chi siamo</a>
+            <a href="{% url 'perche_noi' %}" class="col-sm a">Perchè noi</a>
             <a href="{% url 'auto_in_vendita' %}" class="col-sm-2 a">Auto in vendita</a>
             <a href="{% url 'paga_con_comodo' %}" class="col-sm-2 a">Paga con comodo</a>
             <a href="{% url 'entra_in_contatto' %}" class="col-sm-2 a">Entra in contatto</a>
-            <a href="#" class="col-sm-1 a">Service</a>
-            <a href="{% url 'reviews' %}" class="recensioni a">Recensioni</a>
+            <a href="http://www.palponservice.it/" target="_blank" class="col-sm-1 a">Service</a>
+            <a href="{% url 'reviews' %}" class="col-sm a">Recensioni</a>
         </menu>
     </header>
     <div class="blocked-block"></div>
@@ -48,18 +45,18 @@
         <div class="line"></div>
         <div class="row footer-block">
             <div class="col-sm-4">
-                <p class="text">Si riceve su appuntamento presso lo Showroom:</p>
-                <p class="text">Via Arezzo 36 Seregno (MB) 20831 Italia</p>
-                <p class="text">Tel. +39 393 989 3909 Fabrizio@tanteauto.it</p>
+                <p>Si riceve su appuntamento presso lo Showroom:</p>
+                <p>Via Arezzo 36 Seregno (MB) 20831 Italia</p>
+                <p>Tel. +39 393 989 3909 Fabrizio@tanteauto.it</p>
             </div>
-            <div class="col-sm-5"></div>
-            <div class="col-sm-3">
-                <p class="text">Enterprise Srl Sede legale Via </p>
-                <p class="text">Stoppani 13, 20845 Sovico (MB) C.F</p>
-                <p class="text">e P.I.: 08963610962</p>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <p>Enterprise Srl Sede legale Via Stoppani 13,</p>
+                <p>20845 Sovico (MB)</p>
+                <p>C.Fe P.I.: 08963610962</p>
             </div>
         </div>
-        <div class="my_name text-center">created by <a href="https://www.freelancer.com.ru/u/maximdv34">Maksym Diamandi</a></div>
+        <div class="my_name text-center">created by <a href="https://www.freelancer.com.ru/u/maximdv34" target="_blank">Maksym Diamandi</a></div>
     </footer>
 </body>
 </html>
