@@ -8,3 +8,9 @@
 a:hover{
 	text-decoration: underline;
 }
+@media only all and (max-width: 600px) {
+	.text{
+		font-size: 25px;
+		margin: 0;
+	}
+}

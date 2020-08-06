@@ -114,6 +114,21 @@ a:hover {
     .presentation .block2 {
       width: 100%; }
     .presentation .block3 {
-      width: 100%; } }
+      width: 100%; }
+
+  .buttons button {
+    font-size: 26px; }
+
+  .sliders {
+    margin: 0;
+    font-size: 20px; }
+    .sliders .title {
+      height: 45px; }
+    .sliders .button {
+      color: white;
+      font-size: 20px; }
+    .sliders .image {
+      height: auto;
+      display: block; } }
 
 /*# sourceMappingURL=indexstyle.css.map */

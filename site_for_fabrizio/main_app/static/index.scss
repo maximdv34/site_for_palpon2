@@ -149,5 +149,24 @@ a:hover{
 			width: 100%;
 		}
 	}
-
+	.buttons{
+		button{
+			font-size: 26px;
+		}
+	}
+	.sliders{
+		margin: 0;
+		font-size: 20px;
+		.title{
+			height: 45px;
+		}
+		.button{
+			color: white;
+			font-size: 20px;
+		}
+		.image{
+			height: auto;
+			display: block;
+		}
+	}
 }
