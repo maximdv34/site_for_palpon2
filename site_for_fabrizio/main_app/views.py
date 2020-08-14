@@ -33,5 +33,9 @@ def presentiamoci(request):
     return render(request, 'presentiamoci.html')
 
 
+def valutazione(request):
+    return render(request, 'valutazione.html')
+
+
 def reviews(request):
     return render(request, 'reviews.html', {'clients': list(Client.objects.order_by('-created_date'))})

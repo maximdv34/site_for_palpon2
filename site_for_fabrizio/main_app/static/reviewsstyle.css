@@ -15,6 +15,9 @@
 .texts{
 	margin: auto 0;
 }
+.name{
+	font-size: 2.2vw;
+}
 @media only all and (max-width: 600px) {
 	.link{
 		margin: 0px;
@@ -26,5 +29,8 @@
 	}
 	.texts>p{
 		font-size: 15px;
+	}
+	.name{
+		font-size: 18px!important;
 	}
 }

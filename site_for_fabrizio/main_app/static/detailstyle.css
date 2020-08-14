@@ -58,4 +58,36 @@
 .big-images > div {
   margin-bottom: 30px; }
 
+@media only all and (max-width: 600px) {
+  .content .title {
+    font-size: 20px; }
+
+  .images .image {
+    display: none; }
+  .images .button {
+    font-size: 30px !important;
+    width: 100% !important; }
+
+  .text1 {
+    width: 100%;
+    height: auto !important; }
+    .text1 p {
+      font-size: 15px !important; }
+
+  .disponibile {
+    display: none; }
+
+  .garanzia {
+    font-size: 20px !important; }
+
+  .price {
+    font-size: 35px !important; }
+
+  .richedi {
+    font-size: 23px !important; }
+
+  .text2 {
+    font-size: 15px !important;
+    padding: 30px; } }
+
 /*# sourceMappingURL=detailstyle.css.map */

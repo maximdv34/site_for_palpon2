@@ -3,10 +3,13 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'detailstyle.css' %}">
 <script type="text/javascript">
+	//var foto = $('#foto').first();
+	//var offset1 = foto.offset();
+	//console.log(offset1.top);
 	$(document).ready(function(){
-var height = $(window).height();
 $('.button').on('click',function(){
-   $(window).scrollTop(1525);
+	//$(window).scrollTop(offset1.top);
+	$(window).scrollTop(1500);
 })
 });
 </script>
@@ -37,7 +40,7 @@ $('.button').on('click',function(){
 			</div>
 			{% endif %}			
 		</div>
-		<div class="col-sm-5 row">
+		<div class="col-sm-5 row mx-auto">
 			<div class=" col-sm-12">
 				<div class="disponibile float-right">DISPONIBILE</div>
 		</div>
@@ -55,10 +58,10 @@ $('.button').on('click',function(){
 	</div>
 	<div class="row">
 		<div class="col-sm-11 mx-auto text2"><p>{{ post.text2|linebreaks }}</p></div>
-		<div class="row big-images col-sm-11 mx-auto" id="foto">
+		<div class="row big-images col-sm-11 mx-auto" >
 	      	<div class="col-sm-6"><img src="{{ post.image.url }}"></div>
 			{% for image in images %}
-				<div class="col-sm-6"><img src="{{ image.image.url }}"></div>
+				<div class="col-sm-6" id="foto"><img src="{{ image.image.url }}"></div>
 			{% endfor %}
 	  	</div>
 	</div>

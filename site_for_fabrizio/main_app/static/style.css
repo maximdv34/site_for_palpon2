@@ -44,7 +44,8 @@ header {
     header .companies .fab {
       padding: 0; }
     header .companies .surname {
-      padding-right: 0; }
+      padding-right: 0;
+      margin-left: 20px; }
     header .companies .label {
       padding: 0; }
     header .companies div {
@@ -111,24 +112,24 @@ footer {
   .mesenger {
     width: 50px;
     bottom: 0px;
-    right: 0px; }
+    right: 17px; }
 
   .whatsapp {
-    width: 55px;
+    width: 60px;
     bottom: -3px;
-    right: 50px; }
+    right: 65px; }
 
   footer {
     font-size: 12px; }
-
-  .footer-block > div {
-    width: 50%;
-    display: block;
-    max-width: 50%;
-    padding: 0;
-    flex: none; }
-
-  .ghost {
-    display: none !important; } }
+    footer .footer-block {
+      padding: 20px 20px; }
+    footer .footer-block > div {
+      width: 50%;
+      display: block;
+      max-width: 50%;
+      padding: 5px;
+      flex: none; }
+    footer .ghost {
+      display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

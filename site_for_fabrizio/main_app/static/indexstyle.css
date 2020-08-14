@@ -83,7 +83,8 @@ a:hover {
 
 @media only all and (max-width: 600px) {
   .video {
-    width: 100%; }
+    width: 100%;
+    height: 235px; }
 
   .line-for-video {
     width: 100%; }

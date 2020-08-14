@@ -12,5 +12,6 @@ urlpatterns = [
     path('paga_con_comodo/', views.paga_con_comodo, name='paga_con_comodo'),
     path('perche_noi/', views.perche_noi, name='perche_noi'),
     path('reviews/', views.reviews, name='reviews'),
+    path('valutazione', views.valutazione, name='valutazione'),
 ]
 
