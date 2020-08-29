@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<script>
+  fbq('track', 'ViewContent', {
+    value: '{{ post.price }}',
+    currency: 'EUR',
+    content_ids: '{{ post.pk }}',
+    content_type: 'product',
+  });
+</script>
 <link rel="stylesheet" type="text/css" href="{% static 'detailstyle.css' %}">
 <script type="text/javascript">
 	//var foto = $('#foto').first();
