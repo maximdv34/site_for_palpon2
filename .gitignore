@@ -1,2 +1,3 @@
 site_for_fabrizio/media
 /venv
+site_for_fabrizio/db.sqlite3
